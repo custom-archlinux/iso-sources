@@ -131,7 +131,9 @@ libcanberra-gstreamer
 libcanberra-pulse
 lightdm
 lightdm-gtk-greeter
+materia-gtk-theme
 noto-fonts
+papirus-icon-theme
 pavucontrol
 pulseaudio-alsa
 pulseaudio-bluetooth
@@ -158,8 +160,6 @@ xorg-apps
 
 # Calamares
 calamares
-grub
-os-prober
 
 # Utils
 base-devel
