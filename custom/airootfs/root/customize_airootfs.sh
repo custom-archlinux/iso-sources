@@ -2,8 +2,8 @@
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-set -e -u
+# set -e -u
 
 # Warning: customize_airootfs.sh is deprecated! Support for it will be removed in a future archiso version.
 
-cp -aT /etc/skel/ /root/
+# cp -aT /etc/skel/ /root/
