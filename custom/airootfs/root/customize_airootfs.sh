@@ -11,8 +11,6 @@ locale-gen
 
 cp -aT /etc/skel/ /root/
 
-sed -i 's/#\(PermitRootLogin \).\+/\1yes/' /etc/ssh/sshd_config
-
 systemctl enable pacman-init.service choose-mirror.service systemd-networkd.service systemd-resolved.service
 systemctl set-default graphical.target
 # systemctl enable reflector.service
