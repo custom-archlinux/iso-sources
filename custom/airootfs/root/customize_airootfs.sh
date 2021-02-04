@@ -10,7 +10,3 @@ sed -i 's/#\(en_US\.UTF-8\)/\1/' /etc/locale.gen
 locale-gen
 
 cp -aT /etc/skel/ /root/
-
-systemctl enable pacman-init.service choose-mirror.service systemd-networkd.service systemd-resolved.service
-systemctl set-default graphical.target
-# systemctl enable reflector.service
