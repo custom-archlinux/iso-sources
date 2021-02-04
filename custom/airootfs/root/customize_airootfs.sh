@@ -14,4 +14,3 @@ cp -aT /etc/skel/ /root/
 systemctl enable pacman-init.service choose-mirror.service systemd-networkd.service systemd-resolved.service
 systemctl set-default graphical.target
 # systemctl enable reflector.service
-systemctl enable lightdm.service
