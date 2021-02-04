@@ -15,7 +15,3 @@ systemctl enable pacman-init.service choose-mirror.service systemd-networkd.serv
 systemctl set-default graphical.target
 # systemctl enable reflector.service
 systemctl enable lightdm.service
-
-pacman-key --init
-pacman-key --populate archlinux customarchlinux
-pacman-key --lsign-key 6ED455BE5F7323B1
