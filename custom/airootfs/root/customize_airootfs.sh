@@ -13,7 +13,6 @@ cp -aT /etc/skel/ /root/
 
 sed -i 's/#\(PermitRootLogin \).\+/\1yes/' /etc/ssh/sshd_config
 sed -i "s/#Server/Server/g" /etc/pacman.d/mirrorlist
-sed -i 's/#\(Storage=\)auto/\1volatile/' /etc/systemd/journald.conf
 
 sed -i 's/#\(HandleSuspendKey=\)suspend/\1ignore/' /etc/systemd/logind.conf
 sed -i 's/#\(HandleHibernateKey=\)hibernate/\1ignore/' /etc/systemd/logind.conf
@@ -27,8 +26,3 @@ systemctl enable lightdm.service
 pacman-key --init
 pacman-key --populate archlinux customarchlinux
 pacman-key --lsign-key 6ED455BE5F7323B1
-
-#set permissions
-chmod 750 /etc/sudoers.d
-chmod 750 /etc/polkit-1/rules.d
-chgrp polkitd /etc/polkit-1/rules.d
