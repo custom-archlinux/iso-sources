@@ -28,16 +28,6 @@ pacman-key --init
 pacman-key --populate archlinux customarchlinux
 pacman-key --lsign-key 6ED455BE5F7323B1
 
-userGroups="adm,audio,disk,floppy,log,network,optical,rfkill,storage,video,wheel,sys"
-useradd -m -g users -G $userGroups -s /bin/bash liveuser
-passwd -d liveuser
-# enable autologin
-groupadd -r autologin
-gpasswd -a liveuser autologin
-groupadd -r nopasswdlogin
-gpasswd -a liveuser nopasswdlogin
-echo "The account liveuser with no password has been created"
-
 #set permissions
 chmod 750 /etc/sudoers.d
 chmod 750 /etc/polkit-1/rules.d
