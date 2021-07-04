@@ -1,5 +1,8 @@
-# Custom Arch Linux Iso Sources
-This repo contains only files and folders that are different from the official archiso.
+# ISO Sources
+
+This is where you decide what you add in your live distribution, what tools, what packages, what configurations.
+
+It contains only files and folders that are different from the official archiso.
 
 These files and folders are located in the ./custom folder.
 
