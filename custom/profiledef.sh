@@ -1,16 +1,15 @@
 #!/usr/bin/env bash
 # shellcheck disable=SC2034
 
-iso_name="customarchlinux-xfce"
-iso_label="custom-archlinux_$(date +%Y%m)"
-iso_publisher="Custom Arch Linux <https://github.com/custom-archlinux>"
-iso_application="Custom Arch Linux Live/Rescue CD"
+iso_name="alice"
+iso_label="alice_$(date +%Y%m)"
+iso_publisher="Arch LInux Custom Easy <https://github.com/custom-archlinux>"
+iso_application="Arch LInux Custom Easy Live/Rescue CD"
 iso_version="$(date +%Y.%m.%d)"
 install_dir="arch"
 bootmodes=('bios.syslinux.mbr' 'bios.syslinux.eltorito' 'uefi-x64.systemd-boot.esp' 'uefi-x64.systemd-boot.eltorito')
 arch="x86_64"
 pacman_conf="pacman.conf"
-#airootfs_image_tool_options=('-comp' 'xz' '-Xbcj' 'x86' '-b' '1M' '-Xdict-size' '1M')
 airootfs_image_tool_options=('-comp' 'xz')
 file_permissions=(
   ["/etc/shadow"]="0:0:400"
