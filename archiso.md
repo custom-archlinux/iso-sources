@@ -6,7 +6,7 @@ You can follow up the versions via this link.
 
 https://www.archlinux.org/packages/extra/any/archiso/
 
-We are now using archiso version **50.1-1**
+We are now using archiso version **58-1**
 
 To know your version:
 
