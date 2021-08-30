@@ -1,4 +1,0 @@
-xset s off -dpms &
-xmodmap -e "keycode 49 = less greater less greater VoidSymbol VoidSymbol" &
-xmodmap -e "keycode 94 = at numbersign at numbersign periodcentered Ydiaeresis" &
-numlockx on &
