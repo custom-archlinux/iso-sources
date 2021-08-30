@@ -12,8 +12,7 @@ After=etc-pacman.d-gnupg.mount
 Type=oneshot
 RemainAfterExit=yes
 ExecStart=/usr/bin/pacman-key --init
-ExecStart=/usr/bin/pacman-key --populate archlinux customarchlinux
-ExecStart=/usr/bin/pacman-key --lsign-key 6ED455BE5F7323B1
+ExecStart=/usr/bin/pacman-key --populate archlinux
 
 [Install]
 WantedBy=multi-user.target
