@@ -86,6 +86,7 @@ main() {
   preBuild
   copyFiles "/usr/share/archiso/configs/releng/*" ${sourcesDir} "Copy archiso files from the system to the local archiso directory"
   copyFiles "${customFiles}*" "${sourcesDir}" "Copy custom files in archiso directory"
+  git clone https://github.com/ArchLinuxCustomEasy/scripts.git ${sourcesDir}/airootfs/root/scripts
   changeOwner "root:root" "${sourcesDir}"
   runMkarchiso
   changeOwner "1000:1000" "$(pwd)"
